@@ -1,0 +1,21 @@
+.chart {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+    min-height: 4em;
+}
+
+.level_0 h3 {
+    font-size: 1.68em;
+}
+
+.level_1 h3 {
+    font-size: 1.2em;
+}
+
+.level_2 h3 {
+    font-size: 1.1em;
+}

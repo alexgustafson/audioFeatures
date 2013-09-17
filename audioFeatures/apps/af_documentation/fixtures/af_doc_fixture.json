@@ -1,0 +1,100 @@
+[
+{
+    "pk": 1, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 2, 
+        "parent": null, 
+        "title": "Abstract", 
+        "level": 0, 
+        "lft": 1, 
+        "tree_id": 1, 
+        "order": 0, 
+        "main_text": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 2, 
+        "parent": null, 
+        "title": "Index", 
+        "level": 0, 
+        "lft": 1, 
+        "tree_id": 2, 
+        "order": 1, 
+        "main_text": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 2, 
+        "parent": null, 
+        "title": "Introduction", 
+        "level": 0, 
+        "lft": 1, 
+        "tree_id": 3, 
+        "order": 2, 
+        "main_text": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 8, 
+        "parent": null, 
+        "title": "Features", 
+        "level": 0, 
+        "lft": 1, 
+        "tree_id": 4, 
+        "order": 3, 
+        "main_text": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 3, 
+        "parent": 4, 
+        "title": "Absolute Maximum", 
+        "level": 1, 
+        "lft": 2, 
+        "tree_id": 4, 
+        "order": null, 
+        "main_text": "Finds the highest sample value in an audio signal."
+    }
+},
+{
+    "pk": 6, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 5, 
+        "parent": 4, 
+        "title": "Azimuth Discrimination and Resynthesis", 
+        "level": 1, 
+        "lft": 4, 
+        "tree_id": 4, 
+        "order": null, 
+        "main_text": "A method by which individual components of a recording can be isolated from a stereo audio recording. The Short Time Fourier Transformation is obtained from the left and right channels. Signal components which exist in both the channels can be isolated based on their stereo position."
+    }
+},
+{
+    "pk": 7, 
+    "model": "af_documentation.section", 
+    "fields": {
+        "rght": 7, 
+        "parent": 4, 
+        "title": "ADRessSpectrum", 
+        "level": 1, 
+        "lft": 6, 
+        "tree_id": 4, 
+        "order": null, 
+        "main_text": ""
+    }
+}
+]
