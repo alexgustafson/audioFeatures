@@ -1,0 +1,15 @@
+# ignore
+.DS_Store
+*.pyc
+.pydev*
+.project
+.settings
+#*.db
+env
+
+audioFeatures/local_settings.py
+audioFeatures/media
+audioFeatures/logs
+audioFeatures/env
+audioFeatures/static
+#website/site-static
