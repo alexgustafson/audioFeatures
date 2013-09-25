@@ -1,4 +1,4 @@
-{% load mptt_tags %}
+{% load mptt_tags inplace_edit %}
 
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
@@ -11,10 +11,12 @@
 
   
   <link rel="stylesheet" href="{{ STATIC_URL }}css/foundation.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/general_foundicons.css">
   <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
-  
+  {% inplace_css 1 %}
 
   <script src="{{ STATIC_URL }}js/vendor/custom.modernizr.js"></script>
+
 
 </head>
 <body>
@@ -37,7 +39,7 @@
                 <div class="row">
                     <div class="large-12 columns">
                         <div class="panel">
-                            <p>{{ node.main_text }}</p>
+                            <p>{% inplace_edit "node.main_text|safe" %}</p>{% for process in node.process_chain.all %}<i data-processID="{{ process.pk }}"class="foundicon-graph showGraph"></i>{% endfor %}
 
 
                 {% if not node.is_leaf_node %}
@@ -61,8 +63,13 @@
   ('__proto__' in {} ? '{{ STATIC_URL }}js/vendor/zepto' : '{{ STATIC_URL }}js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  
+<script src="{{ STATIC_URL }}js/vendor/jquery.js"></script>
+{% inplace_js 1 1 %}
+
   <script src="{{ STATIC_URL }}js/foundation.min.js"></script>
+  <script src="{{ STATIC_URL }}js/vendor/d3.v3.js"></script>
+  <script src="{{ STATIC_URL }}js/rickshaw.js"></script>
+
   <!--
   
   <script src="{{ STATIC_URL }}js/foundation/foundation.js"></script>
@@ -102,5 +109,7 @@
   <script>
     $(document).foundation();
   </script>
+
+    <script src="{{ STATIC_URL }}js/main.js"></script>
 </body>
 </html>

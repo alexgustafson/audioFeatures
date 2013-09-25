@@ -15,3 +15,10 @@ class Section(MPTTModel):
 
     def __unicode__(self):
         return "%s" % self.title
+
+'''
+class Source(models.Model):
+    title = models.CharField(_('Title'), max_length=120,)
+    source_ref = models.TextField(_('Source Reference'), blank=True, null=True)
+'''
+

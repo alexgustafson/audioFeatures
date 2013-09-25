@@ -1,7 +1,7 @@
-.chart {
-    font: 10px sans-serif;
-    background-color: steelblue;
-    text-align: right;
+.rickshaw_graph {
+    outline-color: #9797a3;
+    outline-width: 1px;
+    outline-style: solid;
     padding: 3px;
     margin: 1px;
     color: white;
@@ -19,3 +19,7 @@
 .level_2 h3 {
     font-size: 1.1em;
 }
+
+
+
+
